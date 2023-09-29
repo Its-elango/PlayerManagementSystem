@@ -1,0 +1,115 @@
+﻿<script src="https://kit.fontawesome.com/ce19876732.js" crossorigin="anonymous"></script>
+
+<style>
+    /* Styling for the background and page */
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('../../content/img/contactback.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: blur(3px);
+        margin: 0;
+        padding: 0;
+    }
+    #icon:hover {
+        transition: transform 300ms;
+        transform: translateY(-10px);
+    }
+    /* Styling for the header */
+    header {
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 36px;
+    }
+
+    /* Styling for the container */
+    .container {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styling for the contact button */
+    #contactbtn {
+        margin-left: -280px;
+        margin-top: 60px;
+        width: 25%;
+    }
+
+    /* Styling for labels and input fields */
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    /* Styling for the submit button on hover */
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    /* Styling for the social media links */
+    #social {
+        float: right;
+      
+        margin-top: 100px;
+    }
+</style>
+<body>
+    <header>
+        <!-- Page title -->
+        <h1>Contact us</h1>
+    </header>
+    <div class="container">
+        <div class="" id="social">
+            <section>
+                <!-- Social media links section -->
+                <h2>Connect with us on social media</h2>
+                <div class="my-3">
+                    <!-- Social media icons with links -->
+                    <a href="https://facebook.com/nba">	<i class='fab fa-facebook mx-3' style='font-size:50px' id="icon"></i></a>
+                    <a href="https://twitter.com/NBA">	<i class='fab fa-twitter mx-3' style='font-size: 50px' id="icon"></i></a>
+                    <a href="https://instagram.com/nba/?hl=en">	<i class='fab fa-instagram mx-3' style='font-size:50px' id="icon"></i></a>
+                    <a href="https://youtube.com/user/NBA">	<i class='fab fa-youtube mx-3' style='font-size: 50px' id="icon"></i></a>
+                   </div>
+</section>
+        </div>
+
+        <div class="form">
+            <!-- Contact form section -->
+            <form method="post">
+                <!-- Name input field -->
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+
+                <!-- Email input field -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"  placeholder="Enter your email..."  required>
+
+                <!-- Contact input field -->
+                <label for="contact">Contact</label>
+                <input type="tel" id="contact" name="contact"  placeholder="Enter your number..."  required>
+
+                <!-- Message textarea -->
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"  placeholder="Enter your message..."  required></textarea>
+
+                <!-- Submit button -->
+                <button id="contactbtn" class="btn btn-primary btn-lg" type="submit">Send  <i class="fa-regular fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+</body>
